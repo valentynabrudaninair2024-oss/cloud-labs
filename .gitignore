@@ -1,0 +1,16 @@
+# secrets
+.env
+*.tfvars
+!*.tfvars.example
+*.csv
+
+# terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# python
+__pycache__/
+*.pyc
+.venv/
