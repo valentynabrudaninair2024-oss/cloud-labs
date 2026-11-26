@@ -1,0 +1,12 @@
+# Copy to terraform.tfvars (ignored by git) and fill in.
+github_repo  = "valentynabrudaninair2024-oss/cloud-labs"
+db_name      = "library"
+db_username  = "libraryadmin"
+db_password  = "change-me-strong-password"
+budget_email = "valentyna.brudanina.ir.2024@lpnu.ua"
+
+# optional
+# alert_email       = "..."
+# cache_enabled     = true
+# cache_ttl_seconds = 45
+# cpu_target        = 60
