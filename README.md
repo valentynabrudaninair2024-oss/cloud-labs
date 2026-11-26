@@ -99,7 +99,7 @@ ARN ролі записати в GitHub: Settings → Secrets and variables → 
 
 Прибирання: `terraform destroy`.
 
-**Публічна адреса:** _вставити результат `terraform output app_url` після розгортання_
+**Публічна адреса:** http://library-alb-1033095156.eu-north-1.elb.amazonaws.com
 
 ## Архітектура і безпека
 
