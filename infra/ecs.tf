@@ -6,6 +6,7 @@ resource "null_resource" "initial_image" {
 
   provisioner "local-exec" {
     interpreter = ["bash", "-c"]
+    interpreter = ["bash", "-c"]
     command = <<-EOT
       set -e
       aws ecr get-login-password --region ${var.region} | docker login --username AWS --password-stdin ${aws_ecr_repository.app.registry_id}.dkr.ecr.${var.region}.amazonaws.com

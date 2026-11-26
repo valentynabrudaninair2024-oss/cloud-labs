@@ -14,7 +14,7 @@ def client():
     if _client is None:
         _client = boto3.client(
             "sqs",
-            region_name=os.environ.get("AWS_REGION", "eu-central-1"),
+            region_name=os.environ.get("AWS_REGION", "eu-north-1"),
             endpoint_url=os.environ.get("SQS_ENDPOINT_URL") or None,
         )
     return _client

@@ -77,7 +77,7 @@ def test_worker_skips_redelivered_message():
     boto3 = pytest.importorskip("boto3")
     if not any(h in SQS_ENDPOINT_URL for h in ("localhost", "127.0.0.1")):
         pytest.skip("needs direct access to the local queue")
-    client = boto3.client("sqs", region_name="eu-central-1", endpoint_url=SQS_ENDPOINT_URL,
+    client = boto3.client("sqs", region_name="eu-north-1", endpoint_url=SQS_ENDPOINT_URL,
                           aws_access_key_id="local", aws_secret_access_key="local")
 
     created = post("/libraries/async", new_library()).json()
