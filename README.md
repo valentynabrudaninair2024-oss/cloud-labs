@@ -64,10 +64,12 @@ erDiagram
 
 ## Локальний запуск
 
+У файлі `.env` треба вказати свій `DB_PASSWORD`.
+
 ```bash
-cp .env.example .env          # вкажіть свій DB_PASSWORD
+cp .env.example .env
 docker compose up --build -d
-docker compose exec app python -m library.seed   # демонстраційні дані
+docker compose exec app python -m library.seed
 curl localhost:8000/libraries
 ```
 
@@ -82,9 +84,11 @@ python -m pytest -v tests/
 
 ## Розгортання в AWS
 
+У `infra/terraform.tfvars` треба вказати пароль бази і пошту для сповіщень.
+
 ```bash
 cd infra
-cp terraform.tfvars.example terraform.tfvars   # заповніть пароль і пошту
+cp terraform.tfvars.example terraform.tfvars
 terraform init
 terraform apply
 terraform output app_url
