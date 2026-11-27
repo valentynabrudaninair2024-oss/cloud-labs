@@ -1,6 +1,6 @@
 # cloud-labs — Library API
 
-**Автор:** Валентина Бруданіна, ІР, Львівська політехніка  
+**Автор:** Валентина Бруданіна 
 **Варіант:** бібліотека (філії, каталог книг, читачі, видача й повернення книг)
 
 REST API мережі бібліотек на Flask + MySQL, розгорнутий в AWS: ECS Fargate за Application Load Balancer, RDS MySQL у приватних підмережах, кеш ElastiCache (Valkey), черга SQS з обробником, образи в ECR і автодеплой з GitHub Actions через OIDC. Уся інфраструктура описана в Terraform.
